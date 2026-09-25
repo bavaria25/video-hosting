@@ -42,7 +42,9 @@ Ce document est le pense-bête de la méthode. La règle courte est dans
 
 ## Démarrer une feature
 
-Avant d'écrire la moindre ligne de code d'une nouvelle feature :
+Le plus simple est de taper `/feature` suivi d'une description dans Claude Code :
+le skill déroule toutes les étapes ci-dessous. À la main, avant d'écrire la
+moindre ligne de code d'une nouvelle feature :
 
 1. Ouvrir une issue avec le modèle « Nouvelle feature » (`.github/ISSUE_TEMPLATE/feature.md`).
 2. Lister les comportements attendus, un par ligne.
