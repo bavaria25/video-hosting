@@ -40,6 +40,20 @@ Ce document est le pense-bête de la méthode. La règle courte est dans
   revient en arrière.
 - Commiter à la fin du cycle.
 
+## Démarrer une feature
+
+Avant d'écrire la moindre ligne de code d'une nouvelle feature :
+
+1. Ouvrir une issue avec le modèle « Nouvelle feature » (`.github/ISSUE_TEMPLATE/feature.md`).
+2. Lister les comportements attendus, un par ligne.
+3. Pour chaque comportement, décider à quel niveau il se teste :
+   - **unitaire** : une règle métier isolée (ex. refuser un fichier de plus de 2 Go) ;
+   - **intégration** : plusieurs briques ensemble (ex. l'upload écrit bien en base et dans le stockage) ;
+   - **end-to-end** : le parcours complet d'un utilisateur (ex. envoyer une vidéo puis la regarder).
+4. Dérouler ensuite le cycle rouge-vert-refactor, en commençant par les tests unitaires.
+
+La PR de la feature reprend ce plan de tests et coche ce qui a été fait.
+
 ## Ce qu'on teste en priorité
 
 Pour un service d'hébergement vidéo, les comportements à couvrir en premier

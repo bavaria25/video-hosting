@@ -27,6 +27,10 @@ Règles concrètes :
 - Avant d'ouvrir ou de mettre à jour une PR, lancer la suite complète et
   cocher la checklist du template de PR.
 
+Au démarrage d'une feature, commencer par écrire son plan de tests (unitaires,
+intégration, end-to-end) avec le modèle d'issue `.github/ISSUE_TEMPLATE/feature.md`,
+avant tout code. Voir la section « Démarrer une feature » de `docs/TDD.md`.
+
 Le détail du cycle et des pièges habituels est dans `docs/TDD.md`.
 
 ## Commandes de test
